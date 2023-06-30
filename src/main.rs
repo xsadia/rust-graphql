@@ -9,6 +9,7 @@ type Schema = async_graphql::Schema<Query, EmptyMutation, EmptySubscription>;
 
 struct AppData {
     schema: Schema,
+    #[allow(dead_code)]
     db: PgPool,
 }
 
