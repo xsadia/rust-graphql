@@ -64,7 +64,7 @@ async fn main() -> std::io::Result<()> {
         .unwrap();
 
     let pool = match PgPoolOptions::new()
-        .max_connections(10)
+        .max_connections(5)
         .connect(&postgres_url)
         .await
     {
