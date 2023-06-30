@@ -20,7 +20,7 @@ struct User {
     age: u32,
 }
 
-// struct Query;
+struct Query;
 #[Object]
 impl Query {
     async fn user(&self) -> User {
